@@ -18,16 +18,15 @@
     "eject": "react-scripts eject"
   },
   "lint-staged": {
-    "src/**/*/.{js,json}":[
+    "src/**/*/.{js,json}": [
       "prettier --write"
     ]
   },
-  "husky":{
+  "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
   },
-  
   "browserslist": {
     "production": [
       ">0.2%",
@@ -41,7 +40,7 @@
     ]
   },
   "devDependencies": {
-    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-prettier": "^8.2.0",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.4.1"
   }
