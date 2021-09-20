@@ -5,11 +5,7 @@ import { Wrapper } from './UsersListItem.styles';
 import { Average } from './UsersListItem.styles';
 import { StyledInfo } from './UsersListItem.styles';
 
-const showIndex = (index) => {
-  alert(`This person number is ${index + 1}`);
-};
-
-const UsersListItem = ({ index, userData: { average, name, attendance } }) => (
+const UsersListItem = ({ deleteUser, userData: { average, name, attendance } }) => (
   <Wrapper>
     <Average value={average}>{average}</Average>
     <StyledInfo>
@@ -18,7 +14,7 @@ const UsersListItem = ({ index, userData: { average, name, attendance } }) => (
     </StyledInfo>
     <Button
       onClick={() => {
-        showIndex(index);
+        deleteUser(name);
       }}
     />
   </Wrapper>
